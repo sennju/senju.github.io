@@ -144,7 +144,7 @@
 .manual-btn {
     border: 2px solid white;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 100%;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -180,7 +180,7 @@
 .navigation-auto div {
     border: 2px solid white;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 100%;
     transition: 1s;
 }
 
