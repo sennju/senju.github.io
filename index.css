@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.nav {
+    margin: 0.6rem;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 2%;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    font-size: 2rem;
+    position: absolute;
+    left: 49%;
+}
+
+.nav:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.219);
+    transition: .5s;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.feel {
+    position: absolute;
+    right: 0;
+    top: 3.61rem;
+    height: 90vh;
+}
+
+.image {
+    background-color: #f2f2f2;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Bebas Neue', cursive;
+    /* position: absolute; */
+    left: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+90deg,  #00000036, #00000017, transparent);
+    align-content: center;
+    z-index: 2;
+}
+
+.revolution {
+    padding: 3rem;
+    font-size: 5rem;
+    width: 40%;
+    text-shadow: 17px 11px 8px #0000004f;
+    z-index: 3;
+    color: #000000;
+}
+
+.afterImage {
+    height: 100vh;
+    background-color: white;
+    z-index: 4;
+}
+
+
+
+/* 2nd part (slider) */
+
+.image-slider {
+    margin: 0;
+    padding: 0;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;  
+    overflow: hidden; 
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100vw;
+    height: 100%;
+    transition: 2s;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 130%;
+}
+
+/* css for manual slide navigation */
+
+/* .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: white
+} */
+
+#radio1:checked ~ .first .manual{
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100vw;
+}
+#radio3:checked ~ .first {
+    margin-left: -200vw;
+}
+
+
+/* css for automatic navigation */
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 19%;
+}
+
+.navigation-auto div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 100%;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: white;
+}
+
+
+/* best sellers section */
+
+.best-sellers{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.best-sellers .images {
+    height: 41%;
+    width: 21%;
+    margin-top: 25vh;
+}
+
+.best-sellers .images:hover {
+    display: inline-block;
+}
+
+.best-sellers img {
+    margin: 0;
+    padding: 0;
+}
+
+#image1 {
+    height: 60%;
+    width: 29%;
+    z-index: 2;
+}
+
+.image2 {
+    height: 110%;
+    width: 130%;
+}
+.image1 {
+    height: 100%;
+    width: 100%;
+}
+.image3 {
+    height: 100%;
+    width: 100%;
+}
+
+#image2 {
+    position: relative;
+    right: -8%;
+}
+
+#image3 {
+    position: relative;
+    left: -11%;
+}
+
+.background-leaf {
+    height: 113vh;
+    width: 45vw;
+    position: absolute;
+    top: 133vh;
+    right: 0;
+    z-index: -5;
+}
+
+.background-leaf2 {
+    height: 35vh;
+    width: 34vw;
+    position: absolute;
+    top: 145vh;
+    left: 0;
+    transform: rotate(180deg);
+    z-index: -5;
+}
