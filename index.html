@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Senju</title>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- tailwind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-r">
+            <a href="index.html" class="logo-r">SENJU</a>
+            <a href="index.html" class="nav-r">Home</a>
+            <a href="about.html" class="nav-r">About</a>
+            <a href="contact.html" class="nav-r">Contact</a>
+        </nav>
+    </header>
+
+    <div class="image-r">
+        <div class="text-r">
+            <p class="revolution-r">Comfort. Aesthetic. Quality.</p>
+        </div>
+        <img src="images/feel.jpg" alt="" class="feel-r">
+    </div>
+
+
+    <!-- image slider start -->
+    <section class="image-slider-r">
+        <div class="slider-r">
+            <div class="slides-r">
+                <!-- radio buttons start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- radio buttons end  -->
+
+                <!-- slide images start  -->
+                <div class="slide-r first-r">
+                    <img src="Images/banner3.jpg" alt="1">
+                </div>
+                <div class="slide-r">
+                    <img src="Images/banner2.jpg" alt="2">
+                </div>
+                <div class="slide-r">
+                    <img src="Images/banner1.jpg" alt="3">
+                </div>
+                <!-- slide images end  -->
+
+                <!-- automatic navigation start  -->
+                <!-- <div class="navigation-auto-r">
+                    <div class="auto-btn1-r"></div>
+                    <div class="auto-btn2-r"></div>
+                    <div class="auto-btn3-r"></div>
+                </div> -->
+                <!-- automatic navigation end  -->
+
+            </div>
+        </div>
+    </section>
+    <!-- image slider end -->
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+    <section class="best-sellers-r">
+        <h1 class="bestsellers-text-r">BESTSELLERS</h1>
+        <img src="Images/leaf-background.png" class="background-leaf-r">
+        <img src="Images/leaf-background2.jpg" class="background-leaf2-r">
+        <div class="images-r" id="image2-r">
+            <img src="images/winter-jacket1.jpg" class="image2-r" alt="denim-jacket">
+        </div>
+        <div class="images-r" id="image1-r">
+            <img src="images/denim-jacket.png" class="image1-r" alt="denim-jacket">
+        </div>
+        <div class="images-r" id="image3-r">
+            <img src="images/aethetic-godfingers.jpg" class="image3-r" alt="tee">
+        </div>
+    </section>
+
+    <!-- section after best sellers -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/1.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/japanese-rose-art.html" class="text-gray-900 title-font text-lg font-medium">Japanese Rose Art</a>
+                <p class="mt-1">Rs.800</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/2.png">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/anti-social-social-club.html" class="text-gray-900 title-font text-lg font-medium">Anti Social Social Club</a>
+                <p class="mt-1">Rs.700</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/3.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/ufo.html" class="text-gray-900 title-font text-lg font-medium">U.F.O</a>
+                <p class="mt-1">Rs.800</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/4.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/x-flowers.html" class="text-gray-900 title-font text-lg font-medium">X - Flowers</a>
+                <p class="mt-1">Rs.800</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/5.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/be-the-effect.html" class="text-gray-900 title-font text-lg font-medium">Be The Effect</a>
+                <p class="mt-1">Rs.900</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/6.png">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/tokyo-revengers-1.html" class="text-gray-900 title-font text-lg font-medium">Tokyo Revengers - Manjiro Sano</a>
+                <p class="mt-1">Rs.700</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/7.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/tokyo-revengers-2.html" class="text-gray-900 title-font text-lg font-medium">Tokyo Revengers</a>
+                <p class="mt-1">Rs.700</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/8.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">HOODIES</h3>
+                <a href="hoodies/graphical-1.html" class="text-gray-900 title-font text-lg font-medium">Let's Play a Game - Graphical</a>
+                <p class="mt-1">Rs.850</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <hr class="border-t border-gray-200 line">
+
+
+      <!-- our team section  -->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The entire Senju Business is carried out and handled by just three people. You probably haven't heard about them, unless you were in the same college as they were. </p>
+          </div>
+          <div class="flex flex-wrap center -m-2">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="rounak" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="Images/rounak.jpg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Rounak Longani</h2>
+                  <p class="text-gray-500">Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="Images/sahil.jpg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Sahil Mandavkar</h2>
+                  <p class="text-gray-500">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="Images/shubh.jpg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Rajiv Koli</h2>
+                  <p class="text-gray-500">Founder</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+</body>
+
+
+   <footer class="text-gray-600 body-font bg-color-r">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">POLICIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="policies.html" class="text-gray-600 hover:text-black">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-black">Shipping Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-black">Terms & Conditions</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-black">Hoodies</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-black">Tees</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-black">Jackets</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SOCIAL MEDIA</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="https://www.facebook.com/Senju-107876671749880" target="_blank" class="text-gray-600 hover:text-black">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/senju.in/" target="_blank" class="text-gray-600 hover:text-black">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/senju_co?s=21" target="_blank" class="text-gray-600 hover:text-black">Twitter</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">NEWSLETTER</h2>
+              <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                  <label for="footer-field" class="leading-7 text-sm text-gray-600">E-Mail:</label>
+                  <input required type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none subscribe-hover rounded teko-font">SUBSCRIBE</button>
+              </div>
+              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Get notified when new discounts
+                <br class="lg:block hidden">or offers are available.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-color-rb">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <a href="index.html" class="ml-3 foot-logo">SENJU</a>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 Senju
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a href="https://www.facebook.com/Senju-107876671749880" target="_blank" class="text-gray-500 ">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover-white" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com/senju_co?s=21" target="_blank" class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover-white" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/senju.in/" target="_blank" class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover-white" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+    </footer>
+
+</html>
